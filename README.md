@@ -4,7 +4,8 @@ ___
 ### 🛠 Install
 > Koa <br>
 > eslint-config-prettier <br>
-> nodemon
+> nodemon <br>
+> koa-router
 ___
 ## Node.js
 > 웹 브라우저에서만 사용하던 자바스크립트를 서버에서도 사용할 수 있는 런타임을 개발한 것
