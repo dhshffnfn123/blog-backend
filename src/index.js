@@ -8,7 +8,7 @@ const router = new Router();
 router.get('/', ctx => {
     ctx.body = '홈';
 });
-router.get('/about', ctx => {
+router.get('/about/:name?', ctx => {
     ctx.body = '소개';
 });
 
