@@ -5,7 +5,8 @@ ___
 > Koa <br>
 > eslint-config-prettier <br>
 > nodemon <br>
-> koa-router
+> koa-router <br>
+> koa-bodyparsera
 ___
 ## Node.js
 > 웹 브라우저에서만 사용하던 자바스크립트를 서버에서도 사용할 수 있는 런타임을 개발한 것
@@ -40,4 +41,8 @@ ___
 >   + PUT    : 데이터를 새 정보로 통째로 교체할 때 사용
 >   + PATCH  : 데이터의 특정 필드를 수정할 때 사용
 > - REST API를 설정할 때는 API 주소와 메서드에 따라 어떤 역할을 하는지 쉽게 파악할 수 있도록 작성해야 한다.
+
+## koa-bodyparser
+> POST/PUT/PATCH 같은 메서드의 Request Body에 JSON 형식으로 데이터를 넣어주면,
+> 이를 파싱하여 서버에서 사용할 수 있게 한다.
 
