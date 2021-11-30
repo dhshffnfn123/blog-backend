@@ -1,14 +1,17 @@
 # 💻 Back-end
-> 자바스크립트로 서버를 구현할 수 있는 Node.js 사용 
+> 자바스크립트로 서버를 구현할 수 있는 Node.js와 MongoDB를 사용하여 블로그 백엔드 구현
 ___
 ### 🛠 Install
 > Koa <br>
 > eslint-config-prettier <br>
 > nodemon <br>
 > koa-router <br>
-> koa-bodyparsera
+> koa-bodyparsera <br>
+> mongoose <br>
+> dotenv <br>
+> esm
 ___
-## Node.js
+# 🧩 Node.js
 > 웹 브라우저에서만 사용하던 자바스크립트를 서버에서도 사용할 수 있는 런타임을 개발한 것
 
 ## Koa
@@ -49,4 +52,15 @@ ___
 > + 컨트롤러는 __exports.이름 = ...__ 형식으로 함수를 내보내주면 다음과 같은 형식으로 불러올 수 있다.
 >   + const 모듈이름 = require('파일이름');
 >   + 모듈이름.이름();
+___
+# 🍃 MongoDB
+> 문서 지향적 NoSQL 데이터베이스<br>
+> 이 데이터베이스에 등록하는 데이터들은 유동적인 스키마를 지닐 수 있다. <br>
+> 데이터의 구조가 자주 바뀐다면 MongDB가 더 유리하다.
 
+## mongoose
+> + mongoose는 Node.js 환경에서 사용하는 MongoDB기반 ODM 라이브러리이다.
+> - 이 라이브러리는 데이터베이스 문서들을 자바스크립트 객체처럼 사용할 수 있게 해준다.
+
+## detenv
+> + 환경변수들을 파일에 넣고 사용할 수 있게 해주는 개발도구이다.
