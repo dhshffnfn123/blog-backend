@@ -114,3 +114,14 @@ ___
 >       1. id
 >       2. 업데이트 내용
 >       3. 업데이트의 옵션
+___
+
+## 🔍 요청 검증
+
+### ObjectId 검증
+> id가 올바른 형식인지 검증하는 방법
+> ```
+> import mongoose from 'mongoose';
+> const { ObjectId } = mongoose.Types;
+> ObjectId.isValid(id);
+> ```
