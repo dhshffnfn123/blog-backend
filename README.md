@@ -129,4 +129,4 @@ ___
 
 ### Request Body 검증
 > 모든 값을 전달 받았는지 검증하는 방법 <br>
-> ✔ src/api/posts/posts.ctrl.js 참고
+> __✔ src/api/posts/posts.ctrl.js 참고__
