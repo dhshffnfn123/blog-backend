@@ -28,6 +28,8 @@ export const write = async ctx => {
     const result = schema.validate(ctx.request.body);
     if (result.error) {
         ctx.status = 400; // Bad Request
+        ctx.body = result.error;
+        return;
     }
 
 
