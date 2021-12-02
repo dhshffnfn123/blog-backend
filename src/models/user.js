@@ -20,5 +20,12 @@ UserSchema.statics.findByUsername = function(username) {    // findByUsername : 
     return this.findOne({ username });
 };  // static 함수에서의 this는 모델을 가리킨다. (User)
 
+// hashedPassword 필드가 응답되지 않도록 데이터를 JSON으로 변환시킨다.
+UserSchema.methods.serialize = function() {
+    const data = this.toJSON();
+    delete data.hashedPassword;
+    return data;
+};
+
 const User = mongoose.model('User', UserSchema);
 export default User;
