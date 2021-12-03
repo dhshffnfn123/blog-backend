@@ -193,3 +193,16 @@ ___
 > ```
 > const user = User.findByUsername('velopert');
 > ```
+
+## Token
+> 사용자가 브라우저에서 토큰을 사용할 때는 주로 두 가지 방법을 사용한다.<br>
+> __첫 번째__ 는 브라우저의 localStorage 혹은 SessionStorage에 담아서 사용하는 방법이다.<br>
+> __두 번째__ 는 브라우저의 쿠키에 담아서 사용하는 방법이다.
+
+<br>
+
+> + 브라우저의 localStorage 혹은 SessionStorage에 토큰을 담으면 사용하기가 매우 편리하고 구현이 쉽다.
+>   + 악성 스크립트를 삽입해 토큰을 탈취하는 __XSS(Cross Site Scripting)__ 에 취약하다.
+> - 쿠키에 담으면 httpOnly라는 속성을 활성화하면 자바스크립트를 통해 쿠키를 조회할 수 없으므로 악성 스크립트로부터 안전하다.
+>   - 사용자가 모르는 API를 요청하게 하는 __CSRF(Cross Site Request Forgery)__ 라는 공격에 취약해질 수 있다.
+> * iat 값은 토큰이 언제 만들어졌는지 알려주고, exp 값은 언제 만료되는지 알려주는 값이다.
