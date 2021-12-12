@@ -47,7 +47,7 @@ export const register = async ctx => {
     }
 };
 
-
+ 
 /* ----------------------------------- 로그인 ---------------------------------- */
 // POST /api/auth/login     { username: "velopert", password: mypass123 }
 export const login = async ctx => {
